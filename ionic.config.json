@@ -1,0 +1,8 @@
+{
+  "name": "email-test",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "7b7e6724"
+}
