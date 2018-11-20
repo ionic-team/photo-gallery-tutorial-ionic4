@@ -83,11 +83,8 @@
     <plugin name="cordova-plugin-ionic-webview" spec="^2.0.0" />
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-plugin-camera" spec="4.0.3" />
-
-    <!-- Required for iOS 10 Camera access 
-         More info: https://github.com/apache/cordova-plugin-camera#ios-quirks -->
     <edit-config file="*-Info.plist" mode="merge" target="NSCameraUsageDescription">
         <string>Used to take pictures</string>
     </edit-config>
-
+    <plugin name="cordova-sqlite-storage" spec="^2.5.1" />
 </widget>
