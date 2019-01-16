@@ -2,11 +2,11 @@ import { Component } from '@angular/core';
 import { PhotoService } from '../services/photo.service';
 
 @Component({
-  selector: 'app-about',
-  templateUrl: 'about.page.html',
-  styleUrls: ['about.page.scss']
+  selector: 'app-tab2',
+  templateUrl: 'tab2.page.html',
+  styleUrls: ['tab2.page.scss']
 })
-export class AboutPage {
+export class Tab2Page {
   currentImage: any;
 
   constructor(public photoService: PhotoService) {  }
