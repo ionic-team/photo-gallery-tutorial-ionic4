@@ -1,6 +1,9 @@
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { IonicStorageModule } from '@ionic/storage';
+import { Camera } from '@ionic-native/camera/ngx';
+
 import { Tab2Page } from './tab2.page';
 
 describe('Tab2Page', () => {
@@ -9,6 +12,8 @@ describe('Tab2Page', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [IonicStorageModule.forRoot()],
+      providers: [Camera],
       declarations: [Tab2Page],
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
